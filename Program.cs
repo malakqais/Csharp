@@ -1,42 +1,159 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
-namespace task1_c_
+namespace task2_c_
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            //1
+            {
+                string[] fruits = { " apple", " bannana", " coconut", " peach", " mango", " berry" };
+                for (int i = 0; i < fruits.Length; i++)
+                {
 
-            Console.WriteLine("enter your name : ");
-            string name = Console.ReadLine();
+                    Console.WriteLine("Fruits at indix" + i + " : " + fruits[i]);
 
-            Console.WriteLine("your name is : "+ name);
 
-            int age = 22;
-            double price = 99.99;
-            char grade = 'A';
-            bool isLoggedIn=false;
-            string Address = "irbid";
-            double tempretaure = 22;
-         
-            Console.WriteLine("your age is : " + age);
-         
-            Console.WriteLine("your price is : " + price);
-         
-            Console.WriteLine("your grade is : " + grade);
-          
-            Console.WriteLine("isLoggedIn : " + isLoggedIn);
-          
-            Console.WriteLine("your Address is : " + Address);
-           
-            Console.WriteLine("the tempretaure is : " + tempretaure);
+                }
+            }
+
+            Console.WriteLine(" ");
+
+            //2
+            {
+                int[] numbers = new int[5];
+                for (int i = 0; i < numbers.Length; i++)
+                {
+
+                    Console.WriteLine("input nubers into the array : ");
+                    Console.Write("number at indix " + i + " : ");
+                    numbers[i] = int.Parse(Console.ReadLine());
+
+                }
+
+                Console.Write("Original array ");
+                for (int i = 0; i < numbers.Length; i++)
+                {
+                    Console.Write(numbers[i] + " ");
+                }
+
+                Array.Reverse(numbers);
+                Console.WriteLine();
+
+                Console.Write("Reseved array ");
+                for (int i = 0; i < numbers.Length; i++)
+                {
+                    Console.Write(numbers[i] + " ");
+                }
+              
+                //int[] Reversenumbers = new int[5];
+                //int length_= Reversenumbers.Length;
+                //for (int i = 0; i < Reversenumbers.Length; i++)
+                //{
+                //    Reversenumbers[i] = numbers[length_- i+1];
+
+
+                //}
+
+                //Console.Write("Reseved array ");
+                //for (int i = 0; i < Reversenumbers.Length; i++)
+                //{
+                //    Console.Write(Reversenumbers[i] + " ");
+                //}
+
+            }
+
+
+            Console.WriteLine(" ");
+            //3
+            {
+                Console.WriteLine(" ");
+                Console.Write("enter number of colors: ");
+                int n = int.Parse(Console.ReadLine());
+                string[] colors = new string[n];
+
+                Console.Write(" input colors into the array : ");
+                for (int i = 0; i < n; i++)
+                {
+                    colors[i] = Console.ReadLine();
+                    if (i != n - 1)
+                    {
+                        Console.Write(" , ");
+                    }
+
+                }
+
+                int count = 0;
+
+                Console.Write("Colors starting with 'R': ");
+
+                for (int i = 0; i < n; i++)
+                {
+                    if (colors[i].StartsWith("R") || colors[i].StartsWith("r"))
+                    {
+                        Console.Write(colors[i] + " ");
+                        count++;
+                    }
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("Total count: " + count);
+
+            }
+
+
+            Console.WriteLine(" ");
+            //4
+
+
+            int[] NUMs = new int[6];
+            Console.WriteLine(" input 6 numbers into the array : ");
+            for (int i = 0; i < NUMs.Length; i++)
+            {
+                NUMs[i]=int.Parse(Console.ReadLine());
+
+            }
+
+            Console.WriteLine(" ");
+
+            for (int i = 0; i < NUMs.Length; i++)
+            {
+                Console.WriteLine("Number at index  "+i+": " + NUMs[i]);
+               
+
+            }
+
+
+            Console.WriteLine("Sum of elements :  "+NUMs.Sum());
+            double avg = (double)(NUMs.Sum()) / NUMs.Length;
+            Console.WriteLine("Average of elements :  " + avg);
+            Console.WriteLine("MIN of elements :  " + NUMs.Min());
+            Console.WriteLine("MAX of elements :  " + NUMs.Max());
+
+            Array.Sort(NUMs);
+            Console.Write("SORTED ARRAY");
+            for (int i = 0; i < NUMs.Length; i++)
+            {
+
+                Console.WriteLine( NUMs[i]);
+                if (i != NUMs.Length - 1)
+                {
+                    Console.Write(" , ");
+                }
+
+            }
+
+
+
+
+
+
         }
+
     }
 }

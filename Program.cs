@@ -4,149 +4,176 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace task2_c_
+namespace task3_C_
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             //1
+            List<string> student_names = new List<string>();
+
+            Console.WriteLine("enter 5 student names");
+
+            for (int i = 0; i < student_names.Count + 1; i++)
             {
-                string[] fruits = { " apple", " bannana", " coconut", " peach", " mango", " berry" };
-                for (int i = 0; i < fruits.Length; i++)
+                if (i < 5)
                 {
-
-                    Console.WriteLine("Fruits at indix" + i + " : " + fruits[i]);
-
-
+                    Console.Write($"Enter student {i + 1} name: ");
+                    string name = Console.ReadLine().Trim().ToUpper();
+                    student_names.Add(name);
+                    Console.WriteLine(name);
                 }
+                else
+                    break;
             }
-
-            Console.WriteLine(" ");
 
             //2
+
+            Console.WriteLine("enter a student name to search");
+            string name_to_search = Console.ReadLine().Trim().ToUpper();
+
+            if (student_names.Contains(name_to_search))
             {
-                int[] numbers = new int[5];
-                for (int i = 0; i < numbers.Length; i++)
-                {
-
-                    Console.WriteLine("input nubers into the array : ");
-                    Console.Write("number at indix " + i + " : ");
-                    numbers[i] = int.Parse(Console.ReadLine());
-
-                }
-
-                Console.Write("Original array ");
-                for (int i = 0; i < numbers.Length; i++)
-                {
-                    Console.Write(numbers[i] + " ");
-                }
-
-                Array.Reverse(numbers);
-                Console.WriteLine();
-
-                Console.Write("Reseved array ");
-                for (int i = 0; i < numbers.Length; i++)
-                {
-                    Console.Write(numbers[i] + " ");
-                }
-              
-                //int[] Reversenumbers = new int[5];
-                //int length_= Reversenumbers.Length;
-                //for (int i = 0; i < Reversenumbers.Length; i++)
-                //{
-                //    Reversenumbers[i] = numbers[length_- i+1];
-
-
-                //}
-
-                //Console.Write("Reseved array ");
-                //for (int i = 0; i < Reversenumbers.Length; i++)
-                //{
-                //    Console.Write(Reversenumbers[i] + " ");
-                //}
+                Console.WriteLine("Student Found");
+            }
+            else
+            {
+                Console.WriteLine("Student Not Found");
 
             }
 
 
-            Console.WriteLine(" ");
             //3
+            Console.WriteLine("enter a student name to remove");
+            string name_to_remove = Console.ReadLine().Trim().ToUpper();
+
+            if (student_names.Contains(name_to_remove))
             {
-                Console.WriteLine(" ");
-                Console.Write("enter number of colors: ");
-                int n = int.Parse(Console.ReadLine());
-                string[] colors = new string[n];
-
-                Console.Write(" input colors into the array : ");
-                for (int i = 0; i < n; i++)
-                {
-                    colors[i] = Console.ReadLine();
-                    if (i != n - 1)
-                    {
-                        Console.Write(" , ");
-                    }
-
-                }
-
-                int count = 0;
-
-                Console.Write("Colors starting with 'R': ");
-
-                for (int i = 0; i < n; i++)
-                {
-                    if (colors[i].StartsWith("R") || colors[i].StartsWith("r"))
-                    {
-                        Console.Write(colors[i] + " ");
-                        count++;
-                    }
-                }
-
-                Console.WriteLine();
-                Console.WriteLine("Total count: " + count);
+                student_names.Remove(name_to_remove);
+            }
+            else
+            {
+                Console.WriteLine("Student Not exist");
 
             }
 
 
-            Console.WriteLine(" ");
             //4
 
+            student_names.Sort();
 
-            int[] NUMs = new int[6];
-            Console.WriteLine(" input 6 numbers into the array : ");
-            for (int i = 0; i < NUMs.Length; i++)
+            // Print sorted list
+            Console.WriteLine("Sorted Student Names:");
+
+            foreach (string name in student_names)
             {
-                NUMs[i]=int.Parse(Console.ReadLine());
-
+                Console.WriteLine(name);
             }
 
-            Console.WriteLine(" ");
+            //5
 
-            for (int i = 0; i < NUMs.Length; i++)
+            Console.WriteLine("Enter skills (comma separated):");
+            string input = Console.ReadLine();
+            string[] skills = input.Split(',');
+            foreach (string skill in skills)
             {
-                Console.WriteLine("Number at index  "+i+": " + NUMs[i]);
-               
-
+                Console.WriteLine(skill);
             }
 
 
-            Console.WriteLine("Sum of elements :  "+NUMs.Sum());
-            double avg = (double)(NUMs.Sum()) / NUMs.Length;
-            Console.WriteLine("Average of elements :  " + avg);
-            Console.WriteLine("MIN of elements :  " + NUMs.Min());
-            Console.WriteLine("MAX of elements :  " + NUMs.Max());
 
-            Array.Sort(NUMs);
-            Console.Write("SORTED ARRAY");
-            for (int i = 0; i < NUMs.Length; i++)
+            //6
+
+            int[,] grades = new int[3, 3];
+
+
+            for (int i = 0; i < 3; i++)
             {
 
-                Console.WriteLine( NUMs[i]);
-                if (i != NUMs.Length - 1)
+
+                Console.WriteLine($" student {i + 1} ->  ");
+                for (int j = 0; j < 3; j++)
                 {
-                    Console.Write(" , ");
+                    Console.WriteLine($"  subject {j + 1} grade is  :  ");
+                    grades[i, j] = int.Parse(Console.ReadLine());
+
                 }
 
+
             }
+
+            for (int i = 0; i < 3; i++)
+            {
+
+
+                Console.WriteLine($" student {i + 1} ->  ");
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.WriteLine($"  subject {j + 1} grade is  : {grades[i, j]}  ");
+
+                }
+
+
+            }
+
+
+            grades[1, 1] = 13;
+
+
+
+            //7
+
+            int[][] exams = new int[3][];
+
+
+            exams[0] = new int[] { 1, 2 };
+            exams[1] = new int[] { 3, 4, 5 };
+            exams[2] = new int[] { 6 };
+
+
+            for (int i = 0; i < exams.Length; i++)
+            {
+
+                for (int j = 0; j < exams[i].Length; j++)
+                {
+
+                    Console.WriteLine($" student {i+1} exam\'s {j + 1} grade is : {exams[i][ j]} ");
+
+
+
+                }
+
+
+            }
+
+
+
+            //8
+
+            Console.WriteLine("Enter admin password:");
+            string password = Console.ReadLine();
+            if (password == "ADMIN123")
+            {
+                Console.WriteLine("Access Granted");
+            }
+            else
+            {
+                Console.WriteLine("Access Denied");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,5 +182,8 @@ namespace task2_c_
 
         }
 
+
+
     }
-}
+    }
+

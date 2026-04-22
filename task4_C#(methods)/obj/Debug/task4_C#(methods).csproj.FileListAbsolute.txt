@@ -1,0 +1,8 @@
+C:\Users\HP\Downloads\task4_C#(methods)\bin\Debug\task4_C#(methods).exe.config
+C:\Users\HP\Downloads\task4_C#(methods)\bin\Debug\task4_C#(methods).exe
+C:\Users\HP\Downloads\task4_C#(methods)\bin\Debug\task4_C#(methods).pdb
+C:\Users\HP\Downloads\task4_C#(methods)\obj\Debug\task4_C#(methods).csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\task4_C#(methods)\obj\Debug\task4_C#(methods).csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\task4_C#(methods)\obj\Debug\task4_C#(methods).exe
+C:\Users\HP\Downloads\task4_C#(methods)\obj\Debug\task4_C#(methods).pdb
+C:\Users\HP\Downloads\task4_C#(methods)\obj\Debug\task4_C#(methods).exe.config

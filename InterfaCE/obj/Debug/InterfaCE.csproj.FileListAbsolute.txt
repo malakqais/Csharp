@@ -1,0 +1,8 @@
+C:\Users\HP\Downloads\InterfaCE\bin\Debug\InterfaCE.exe.config
+C:\Users\HP\Downloads\InterfaCE\bin\Debug\InterfaCE.exe
+C:\Users\HP\Downloads\InterfaCE\bin\Debug\InterfaCE.pdb
+C:\Users\HP\Downloads\InterfaCE\obj\Debug\InterfaCE.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\InterfaCE\obj\Debug\InterfaCE.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\InterfaCE\obj\Debug\InterfaCE.exe
+C:\Users\HP\Downloads\InterfaCE\obj\Debug\InterfaCE.pdb
+C:\Users\HP\Downloads\InterfaCE\obj\Debug\InterfaCE.exe.config

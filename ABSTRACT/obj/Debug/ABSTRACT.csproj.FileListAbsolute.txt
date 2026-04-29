@@ -1,0 +1,7 @@
+C:\Users\HP\Downloads\ABSTRACT\bin\Debug\ABSTRACT.exe.config
+C:\Users\HP\Downloads\ABSTRACT\bin\Debug\ABSTRACT.exe
+C:\Users\HP\Downloads\ABSTRACT\bin\Debug\ABSTRACT.pdb
+C:\Users\HP\Downloads\ABSTRACT\obj\Debug\ABSTRACT.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\ABSTRACT\obj\Debug\ABSTRACT.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\ABSTRACT\obj\Debug\ABSTRACT.exe
+C:\Users\HP\Downloads\ABSTRACT\obj\Debug\ABSTRACT.pdb

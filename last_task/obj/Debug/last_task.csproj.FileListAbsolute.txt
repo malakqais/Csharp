@@ -1,0 +1,8 @@
+C:\Users\HP\Downloads\last_task\bin\Debug\last_task.exe.config
+C:\Users\HP\Downloads\last_task\bin\Debug\last_task.exe
+C:\Users\HP\Downloads\last_task\bin\Debug\last_task.pdb
+C:\Users\HP\Downloads\last_task\obj\Debug\last_task.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\last_task\obj\Debug\last_task.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\last_task\obj\Debug\last_task.exe
+C:\Users\HP\Downloads\last_task\obj\Debug\last_task.pdb
+C:\Users\HP\Downloads\last_task\obj\Debug\last_task.exe.config

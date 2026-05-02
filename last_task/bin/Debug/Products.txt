@@ -1,0 +1,5 @@
+Name: Laptop, Price: 800, Stock: 10
+Name: Ipad, Price: 400, Stock: 20
+Name: Mobile, Price: 600, Stock: 30
+Name: Charger, Price: 100, Stock: 60
+Name: Airpods, Price: 360, Stock: 50
